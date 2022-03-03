@@ -1,0 +1,90 @@
+
+body{
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.slot{
+  width: 20vh;
+  height: 100%;
+  position: relative;
+}
+.slotShadow{
+  width: 20vh;
+  height: 100%;
+  position: absolute;
+  box-shadow: 10px 0px 5px rgb(20 20 20/ 0.3);
+  clear: left;
+}
+#sZero{
+  transform: translateX(0vh);
+}
+#sOne{
+  transform: translateX(19.8vh);
+}
+#sTwo{
+  transform: translateX(39.5vh);
+}
+#sThree{
+  transform: translateX(59.5vh);
+}
+#sFour{
+  transform: translateX(79vh);
+}
+#sFive{
+  transform: translateX(99vh);
+}
+#sSix{
+  transform: translateX(119vh);
+}
+#sSeven{
+  transform: translateX(139vh);
+}
+#sEight{
+  transform: translateX(158.9vh);
+}
+
+
+.rectangle{
+  width: 10vw;
+  height: 300px;
+  background-color: red;
+}
+#greenYellow{
+  background-color: greenYellow;
+}
+#medTurq{
+  background-color: mediumTurquoise;
+}
+#hotPink{
+  background-color: hotPink;
+
+}
+
+#up{
+  animation: scrlUp 7s infinite linear alternate;
+}
+@keyframes scrlUp {
+  0%{
+    transform: translateY(0);
+  }
+  100%{transform: translateY(-110vh);}
+}
+#down{
+  animation: scrlDown 5s infinite linear alternate;
+}
+@keyframes scrlDown {
+  0%{
+    transform: translateY(-110vh);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
